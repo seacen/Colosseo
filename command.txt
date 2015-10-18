@@ -1,0 +1,1 @@
+curl -H "Content-type: application/json" -d ' {"user":{"username":"taeyeon","password":"app123"}}' http://localhost:3000/api/v1/users.json > a.json
