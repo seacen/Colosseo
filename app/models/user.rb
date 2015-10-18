@@ -9,6 +9,9 @@ class User < ActiveRecord::Base
   private
 
   def generate_token
+    begin
+      self.token = SecureRandom.hex
+    end while self.class.exists?(token: token)
   end
 
   def init_score

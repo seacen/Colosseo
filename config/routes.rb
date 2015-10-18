@@ -2,6 +2,7 @@ require 'api_constraints'
 
 Rails.application.routes.draw do
   namespace :api, defaults: { format: 'json' } do
+    post 'login' => 'sessions#do_login', as: :login
     scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
       post 'signup' => 'users#create', as: :signup
       resources :users, only: [:create, :show, :update]

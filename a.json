@@ -1,1 +1,1 @@
-{"id":8,"username":"wendy","password_digest":"$2a$10$aFEvgnF4CpxcL2GnKnfaCOI8heeU7BCZ5bvvLd3TCj/ulV5vbb41W","score":0,"token":null,"created_at":"2015-10-18T16:54:34.774Z","updated_at":"2015-10-18T16:54:34.774Z"}
+{"status":"400","error":"Bad Request"}

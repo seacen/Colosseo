@@ -2,6 +2,8 @@ module Api
   module V1
     class UsersController < ApplicationController
       before_action :set_user, only: [:show, :update]
+      before_action :authenticate, only: [:show, :update]
+      before_action :check_valid, only: [:show, :update]
       respond_to :json
 
       def show
@@ -43,6 +45,21 @@ module Api
 
       def user_params
         params.require(:user).permit(:username, :password)
+      end
+
+      def authenticate
+        authenticate_or_request_with_http_token do |token, options|
+          if User.exists?(token: token)
+            @curr_user = User.find_by(token: token)
+            true
+          else
+            false
+          end
+        end
+      end
+
+      def check_valid
+        render plain: "{\"status\":\"401\",\"error\":\"Unauthorized\"}", status: 401 unless @user==@curr_user
       end
     end
   end
