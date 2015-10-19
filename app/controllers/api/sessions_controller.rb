@@ -4,7 +4,7 @@ module Api
     before_action :session_params, only: [:do_login]
 
     def index
-      render plain: "{\"title\":\"Colosseo API page\",\"documentation\":\"https://github.com/seacen/Colosseo\",\"source_link\":\"https://github.com/seacen/Colosseo\"}", status: 200, content_type: 'application/json'
+      render json: "{\"title\":\"Colosseo API page\",\"documentation\":\"https://github.com/seacen/Colosseo\",\"source_link\":\"https://github.com/seacen/Colosseo\"}", status: 200
     end
 
     def do_login
@@ -14,7 +14,7 @@ module Api
         # Save them in the session
         render json: user, serializer: SessionSerializer
       else
-        render plain: "{\"error\":\"Login Failed\"}", status: 400, content_type: 'application/json'
+        render json: "{\"error\":\"Login Failed\"}", status: 400
       end
     end
 
