@@ -4,7 +4,7 @@
 ##API
 API is used for exchanging data between Colosseo game client and web database.
 
-address: <https://colosseo.herokuapp.com/api/>
+<https://colosseo.herokuapp.com/api/>
 
 ###Documentation
 
