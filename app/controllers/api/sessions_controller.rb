@@ -3,6 +3,10 @@ module Api
     # Before actions to check paramters
     before_action :session_params, only: [:do_login]
 
+    def index
+      render plain: "{\"title\":\"Colosseo API page\",\"documentation\":\"https://github.com/seacen/Colosseo\",\"source_link\":\"https://github.com/seacen/Colosseo\"}", status: 200, content_type: 'application/json'
+    end
+
     def do_login
       # Find a user with params
       user = User.find_by(username: @credentials[:username])
