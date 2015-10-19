@@ -59,7 +59,7 @@ module Api
       end
 
       def check_valid
-        render plain: "{\"status\":\"401\",\"error\":\"Unauthorized\"}", status: 401 unless @user==@curr_user
+        render plain: "{\"error\":\"Unauthorized\"}", status: 401, content_type: 'application/json' unless @user==@curr_user
       end
     end
   end

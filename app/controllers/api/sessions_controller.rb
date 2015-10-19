@@ -8,9 +8,9 @@ module Api
       user = User.find_by(username: @credentials[:username])
       if user && user.authenticate(@credentials[:password])
         # Save them in the session
-        render json: user
+        render json: user, serializer: SessionSerializer
       else
-        render plain: "{\"status\":\"400\",\"error\":\"Bad Request\"}", status: 400
+        render plain: "{\"error\":\"Login Failed\"}", status: 400, content_type: 'application/json'
       end
     end
 
