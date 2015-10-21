@@ -15,7 +15,7 @@ module Api
         respond_to do |format|
           if @user.save
             format.html { redirect_to @user, notice: 'created successfully' }
-            format.json { render json: @user, status: :created }
+            format.json { render json: @user, status: :created, serializer: SessionSerializer }
           else
             # format.html { render :new }
             format.json { render json: @user.errors, status: :unprocessable_entity }
