@@ -20,10 +20,10 @@ curl -H "Content-type: application/json" -d ' {"user":{"username":"seacen","pass
 
 ####retrieve score
 ```
-curl https://colosseo.herokuapp.com/api/users/3 -H 'Authorization: Token token="{{token}}"'
+curl https://colosseo.herokuapp.com/api/users/3 -H 'Authorization: Token token="#{token}"'
 ```
 
 ####update score
 ```
-curl -H "Content-type: application/json" -H 'Authorization: Token token="9ab442841d6bac43f9a3c4bdfd8bf330"' -X PUT -d ' {"user":{"score":"25"}}' https://colosseo.herokuapp.com/api/users/3
+curl -H "Content-type: application/json" -H 'Authorization: Token token="#{token}"' -d ' {"user":{"score":"25"}}' https://colosseo.herokuapp.com/api/users/3
 ```

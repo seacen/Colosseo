@@ -6,7 +6,8 @@ Rails.application.routes.draw do
     post 'login' => 'sessions#do_login', as: :login
     scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
       post 'signup' => 'users#create', as: :signup
-      resources :users, only: [:create, :show, :update]
+      post 'users/:id', to: 'users#update', as: :update
+      resources :users, only: [:create, :show]
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
