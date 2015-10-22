@@ -2,11 +2,13 @@
 #####Colosseo website and game backend
 
 ##API
-API is used for exchanging data between Colosseo game client and web database.
+Exchanging data between Colosseo game client and web database.
 
 <https://colosseo.herokuapp.com/api/>
 
-###Documentation
+**Documentation:** <http://docs.colosseo.apiary.io/>
+
+###~~Curl Documentation (outdated)~~
 
 ####login
 ```
