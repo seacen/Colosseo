@@ -8,6 +8,8 @@ Exchanging data between Colosseo game client and web database.
 
 **Documentation:** <http://docs.colosseo.apiary.io/>
 <br>
+<br>
+<br>
 ***
 ###~~Curl Documentation (outdated)~~
 
