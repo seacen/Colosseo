@@ -2,7 +2,7 @@
 #####Colosseo website and game backend
 
 ##Introduction
-Colosseo is a simple stage fight game, a player is able to choose one of three characters and use its unique skills to fight.
+Colosseo is a simple stage fight game, a player is able to choose one of three characters and use its unique skills to fight. Link to the Colosseo game application source codes: <https://bitbucket.org/Angry_Monkey/colosseoalpha/>
 
 The codes contained in this repository are served as the game website and API for BaaS functionality. Only API is available at the moment.
 
