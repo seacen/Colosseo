@@ -1,2 +1,0 @@
-curl -H "Content-type: application/json" -d ' {"user":{"username":"seacen","password":"seacen"}}' https://colosseo.herokuapp.com/api/users > a.json
-curl http://localhost:3000/api/users/1 -H 'Authorization: Token token="1575d2a199802a3c1faf6a546c35272e"'
