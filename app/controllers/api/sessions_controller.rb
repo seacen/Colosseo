@@ -4,7 +4,7 @@ module Api
     before_action :session_params, only: [:do_login]
 
     def index
-      render json: "{\"title\":\"Colosseo API page\",\"documentation\":\"https://github.com/seacen/Colosseo\",\"source_link\":\"https://github.com/seacen/Colosseo\"}", status: 200
+      render json: "{\"title\":\"Colosseo API page\",\"documentation\":\"http://docs.colosseo.apiary.io/\",\"source_link\":\"https://github.com/seacen/Colosseo\"}", status: 200
     end
 
     def do_login
