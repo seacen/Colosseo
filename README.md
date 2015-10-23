@@ -15,7 +15,6 @@ Exchanging data between Colosseo application and cloud storage.
 <br>
 <br>
 <br>
-***
 ####~~Curl Documentation (outdated)~~
 
 #####login
