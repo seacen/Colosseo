@@ -9,10 +9,11 @@ The codes contained in this repository are served as the game website and API fo
 ## API
 Exchanging data between Colosseo application and cloud storage.
 
+### Service Address
 <https://colosseo.herokuapp.com/api/>
 
-**Documentation:** <http://docs.colosseo.apiary.io/>
-<br>
+### Documentation
+<http://docs.colosseo.apiary.io/>
 <br>
 <br>
 #### ~~Curl Documentation (deprecated)~~
